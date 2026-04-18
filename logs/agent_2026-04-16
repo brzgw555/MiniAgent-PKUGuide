@@ -1,0 +1,67 @@
+2026-04-16 17:56:20,084 - agent - ERROR -vector_store.py:86 - data\PKUArch.txt添加到知识库失败,错误信息:Error loading data\PKUArch.txt
+Traceback (most recent call last):
+  File "C:\Users\TrailblazerWu\anaconda3\envs\resvid\lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xa8 in position 8: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\TrailblazerWu\Desktop\codepy\Agent\rag\vector_store.py", line 71, in load_document
+    documents:list[Document]=get_file_documents(path)
+  File "C:\Users\TrailblazerWu\Desktop\codepy\Agent\rag\vector_store.py", line 56, in get_file_documents
+    return text_loader(read_path)
+  File "C:\Users\TrailblazerWu\Desktop\codepy\Agent\utils_agent\file_handler.py", line 44, in text_loader
+    return TextLoader(file_path).load()
+  File "C:\Users\TrailblazerWu\anaconda3\envs\resvid\lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "C:\Users\TrailblazerWu\anaconda3\envs\resvid\lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading data\PKUArch.txt
+2026-04-16 17:59:10,368 - agent - ERROR -vector_store.py:86 - data\PKUArch.txt添加到知识库失败,错误信息:Error loading data\PKUArch.txt
+Traceback (most recent call last):
+  File "C:\Users\TrailblazerWu\anaconda3\envs\resvid\lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xa8 in position 8: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\TrailblazerWu\Desktop\codepy\Agent\rag\vector_store.py", line 71, in load_document
+    documents:list[Document]=get_file_documents(path)
+  File "C:\Users\TrailblazerWu\Desktop\codepy\Agent\rag\vector_store.py", line 56, in get_file_documents
+    return text_loader(read_path)
+  File "C:\Users\TrailblazerWu\Desktop\codepy\Agent\utils_agent\file_handler.py", line 44, in text_loader
+    return TextLoader(file_path).load()
+  File "C:\Users\TrailblazerWu\anaconda3\envs\resvid\lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "C:\Users\TrailblazerWu\anaconda3\envs\resvid\lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading data\PKUArch.txt
+2026-04-16 18:02:03,058 - agent - ERROR -file_handler.py:33 - 路径不是文件夹:data
+2026-04-16 18:03:36,661 - agent - ERROR -file_handler.py:33 - 路径不是文件夹:data
+2026-04-16 18:04:46,501 - agent - ERROR -vector_store.py:86 - C:\Users\TrailblazerWu\Desktop\codepy\Agent\data\PKUArch.txt添加到知识库失败,错误信息:Error loading C:\Users\TrailblazerWu\Desktop\codepy\Agent\data\PKUArch.txt
+Traceback (most recent call last):
+  File "C:\Users\TrailblazerWu\anaconda3\envs\resvid\lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xa8 in position 8: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\TrailblazerWu\Desktop\codepy\Agent\rag\vector_store.py", line 71, in load_document
+    documents:list[Document]=get_file_documents(path)
+  File "C:\Users\TrailblazerWu\Desktop\codepy\Agent\rag\vector_store.py", line 56, in get_file_documents
+    return text_loader(read_path)
+  File "C:\Users\TrailblazerWu\Desktop\codepy\Agent\utils_agent\file_handler.py", line 44, in text_loader
+    return TextLoader(file_path).load()
+  File "C:\Users\TrailblazerWu\anaconda3\envs\resvid\lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "C:\Users\TrailblazerWu\anaconda3\envs\resvid\lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading C:\Users\TrailblazerWu\Desktop\codepy\Agent\data\PKUArch.txt
+2026-04-16 18:08:33,691 - agent - INFO -vector_store.py:83 - C:\Users\TrailblazerWu\Desktop\codepy\Agent\data\PKUArch.txt已添加到知识库中
+2026-04-16 22:24:59,999 - agent - INFO -vector_store.py:67 - C:\Users\TrailblazerWu\Desktop\codepy\Agent\data\PKUArch.txt已存在知识库中
+2026-04-16 22:26:03,547 - agent - INFO -vector_store.py:67 - C:\Users\TrailblazerWu\Desktop\codepy\Agent\data\PKUArch.txt已存在知识库中
+2026-04-16 22:28:06,591 - agent - INFO -vector_store.py:83 - C:\Users\TrailblazerWu\Desktop\codepy\Agent\data\PKUArch.txt已添加到知识库中
+2026-04-16 22:33:14,694 - agent - INFO -vector_store.py:83 - C:\Users\TrailblazerWu\Desktop\codepy\Agent\data\PKUArch.txt已添加到知识库中
