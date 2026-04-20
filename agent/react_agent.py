@@ -1,7 +1,7 @@
 from langchain.agents import create_agent
 from model.factory import chat_model
 from utils_agent.prompt_loader import load_system_prompt
-from agent.tools.agent_tools import rag_summarize,get_user_id,fill_context_for_report
+from agent.tools.agent_tools import rag_summarize,query_weather,fill_context_for_report
 from agent.tools.middleware import log_before_model,monitor_tool,report_prompt_switch
 
 class ReactAgent:
@@ -9,7 +9,7 @@ class ReactAgent:
         self.agent = create_agent(
             model =chat_model,
             system_prompt =load_system_prompt(),
-            tools=[rag_summarize, get_user_id, fill_context_for_report],
+            tools=[rag_summarize, query_weather, fill_context_for_report],
             middleware=[log_before_model, monitor_tool, report_prompt_switch],
             checkpointer=checkpointer
         )
